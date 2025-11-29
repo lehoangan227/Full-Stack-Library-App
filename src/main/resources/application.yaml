@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1/library
+spring:
+  application:
+    name: Book
+  datasource:
+    url: "jdbc:mysql://localhost:3306/book_library"
+    username: "root"
+    password: "12345"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+jwt:
+  signer-key: "auhhS1ma0NpTiuf5Ia+sOtiq4oTpW14W1FEV4NanRXwkPuKyaP4mxbQBjhEvWL2V"
+  valid-duration: 18000 #second
+  refreshable-duration: 86400 #second
+
+logging:
+  file:
+    name: logs/app.log
+  level:
+    root: info
+  logback:
+    rolling policy:
+      max-file-size: 10MB            # Mỗi file log tối đa 10MB
+      max-history: 7                 # Giữ lại 7 file log cũ
+      total-size-cap: 100MB          # Tổng dung lượng log không vượt quá 100MB
+      clean-history-on-start: false  # Không xóa log cũ khi app restart
+
+open:
+  api:
+    title: Book Library API
+    version: v1.0.0
+    description: Description
+    serverUrl: http://localhost:8080/api/v1/library
