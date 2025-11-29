@@ -1,8 +1,27 @@
+import "./SummuryCard.scss";
 const SummuryCard = () => {
   return (
     <div className="card-container">
-      <div className="img-card-container"></div>
-      <div className="content-card"></div>
+      <a href="" className="img-card-container">
+        <div className="img-container">
+          <img src="/assests/cay-cam-ngot-cua-toi.jpg" />
+        </div>
+        <div className="img-container">
+          <img src="/assests/cay-cam-ngot-cua-toi.jpg" />
+        </div>
+        <div className="img-container">
+          <img src="/assests/cay-cam-ngot-cua-toi.jpg" />
+        </div>
+      </a>
+
+      <div className="content-card">
+        <a href="" className="title-card">
+          New Books
+        </a>
+        <a href="" className="view-all">
+          View all (5)
+        </a>
+      </div>
     </div>
   );
 };
