@@ -1,0 +1,47 @@
+.nav-filter-container {
+  flex: 0 0 25%;
+  border: 1px solid #ececec;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  .item {
+    width: 100%;
+    .title-filter {
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+    .item-filter-container {
+      margin-left: 14px;
+
+      .nav-link {
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: rgb(105, 105, 105);
+        &:hover {
+          color: rgb(212, 177, 111);
+        }
+      }
+      .active-style {
+        color: orange;
+      }
+    }
+    .checkbox-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      label {
+        margin-left: 6px;
+        color: rgb(105, 105, 105);
+        &:hover {
+          color: rgb(212, 177, 111);
+          cursor: pointer;
+        }
+      }
+      input[type="checkbox"] {
+        accent-color: orange;
+        cursor: pointer;
+      }
+    }
+  }
+}

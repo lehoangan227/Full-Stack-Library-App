@@ -1,0 +1,70 @@
+.card-book-container {
+  width: 100%;
+  border: 1px solid #ececec;
+  background-color: white;
+
+  .sort-container {
+    margin: 30px 0px 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .sort-title {
+      color: #4d4d4d;
+    }
+    .sort-by-container {
+      padding: 8px 12px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #3d3d3d;
+      font-size: 14px;
+      option {
+      }
+    }
+  }
+
+  .list-book-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+
+    /* 2. THÊM THUỘC TÍNH NÀY: Định nghĩa chiều cao cho các hàng bị tràn */
+    grid-auto-rows: 300px;
+
+    margin-bottom: 20px;
+    .book-container {
+      padding: 10px;
+      border-radius: 4px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      &:hover {
+        border: 1px solid #ececec;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+        transition: all ease;
+      }
+      .book-image {
+        height: 75%;
+        margin-bottom: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .book-info {
+        .book-title {
+        }
+      }
+    }
+    .no-result-message {
+      grid-column: span 4;
+      text-align: center;
+      font-size: 20px;
+      color: #989898;
+      margin-top: 40px;
+    }
+  }
+}

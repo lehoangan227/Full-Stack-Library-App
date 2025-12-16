@@ -1,0 +1,30 @@
+.content-container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 24px 32px;
+  margin: 48px auto;
+  .hot-books {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    .new-books,
+    .best-sellers-of-week {
+      width: 100%;
+    }
+  }
+  .features-books-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    .book-1,
+    .book-2 {
+      width: 100%;
+    }
+  }
+  .list-categories {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

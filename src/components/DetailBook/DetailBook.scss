@@ -1,0 +1,126 @@
+.detail-book-container {
+  background-color: #f0f0f0;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  .content-body {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    align-items: flex-start;
+
+    .image-section {
+      flex: 4;
+      //   border: 1px solid red;
+      border-radius: 8px;
+      background-color: white;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+
+      padding: 16px;
+      .image-container {
+        width: 100%;
+        max-width: 200px;
+        img {
+          width: 100%; /* Ảnh sẽ chiếm hết khung max-width 300px ở trên */
+          aspect-ratio: 2 / 3; /* 2. CỐ ĐỊNH TỈ LỆ: Quy chuẩn bìa sách thường là 2:3 */
+          object-fit: cover; /* 3. QUAN TRỌNG: Cắt ảnh vừa khung mà không bị méo */
+          display: block;
+          border-radius: 4px; /* Bo góc nhẹ cho ảnh đẹp hơn */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+    .info-section {
+      flex: 8;
+      //   border: 1px solid blue;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .info-section-1 {
+        background-color: white;
+        border-radius: 8px;
+        padding: 15px;
+        .book-title {
+          font-size: 24px;
+          font-weight: 500;
+          margin-bottom: 12px;
+        }
+        .short-info-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 6px 24px;
+          margin-bottom: 16px;
+          span {
+            font-weight: 500;
+          }
+        }
+        button {
+          margin-top: 20px;
+          width: 50%;
+          padding: 12px;
+          border: none;
+          background-color: #7f48d9;
+          color: white;
+          font-weight: 600;
+          border-radius: 20px;
+        }
+      }
+
+      .info-section-2 {
+        background-color: white;
+        border-radius: 8px;
+        padding: 15px;
+        .info-container {
+          .single-info {
+            display: flex;
+            gap: 6px;
+            span {
+              font-weight: 500;
+            }
+          }
+          hr {
+            margin: 8px 0;
+            color: #bbbbbb;
+          }
+        }
+      }
+
+      .info-section-3 {
+        background-color: white;
+        border-radius: 8px;
+        padding: 15px;
+        .description-container {
+          .description-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 16px;
+          }
+          .description-content {
+            font-size: 16px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+
+  .related-book {
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 8px;
+    .title-related-book {
+      font-size: 27px;
+      font-weight: 600;
+      margin-left: 24px;
+      font-family: "Times New Roman", Times, serif;
+    }
+  }
+}

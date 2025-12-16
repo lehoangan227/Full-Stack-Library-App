@@ -1,0 +1,35 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+.layout-container {
+  .sidebar {
+    .menu {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .header {
+    display: flex;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+
+      .logo {
+        font-size: 30px;
+        color: rgb(176, 134, 173);
+      }
+      span {
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 5px;
+        font-family: "Times New Roman", Times, serif;
+        color: rgb(86, 81, 81);
+      }
+    }
+  }
+}
